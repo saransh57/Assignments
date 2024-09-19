@@ -14,6 +14,7 @@ let cryptoKey = "AES128Key"
 // ruleid: swift-user-defaults
 UserDefaults.standard.set(cryptoKey, forKey: "cryptoKey")
 
+/*
 rules:
   - id: swift-user-defaults
     message: Sensitive data detected in UserDefaults; use Keychain for secure storage.
@@ -36,3 +37,5 @@ rules:
           kSecAttrAccount as String: "$KEY",
           kSecValueData as String: $VALUE_DATA
       ] as CFDictionary, nil)
+
+/*
