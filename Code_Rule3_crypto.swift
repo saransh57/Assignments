@@ -37,7 +37,7 @@ rules:
       - pattern: $OBJ.initialize($KEY_SIZE)
     metavariable-regex:
       metavariable: $KEY_SIZE
-      regex: ^(10[0-1][0-9]|10[2-9]\d|[5-9]\d\d|1\d\d\d)$
+      regex: ^(1\d{3}|[5-9]\d{2})$
     fix: |
       $OBJ.initialize(2048)
   
